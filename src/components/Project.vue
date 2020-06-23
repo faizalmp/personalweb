@@ -3,26 +3,28 @@
     <section id="project">
       <v-card class="elevation-0" style="border-radius: 0px; min-height: 625px" dark>
         <v-layout column justify-center align-center>
-          <v-card-title class="display-2 font-weight-bold text-center mt-8">My Works</v-card-title>
+          <v-card-title class="display-2 font-weight-bold text-center">My Works</v-card-title>
           </v-layout>
           <v-container fluid grid-list-xl>
-            <v-layout wrap justify-space-around align-center>
-            <v-flex v-for="item in items" :key="item.title">
-              <v-hover v-slot:default="{ hover }">
-                <v-card :elevation="hover ? 4 : 0" max-width="300">
-                  <v-img style="border-radius: 16px" :src="item.src" max-width="300">
-                    <v-expand-transition>
-                      <div v-if="hover"  class="d-flex transition-fast-in-fast-out black v-card--reveal display-3 white--text" style="height: 100%;">
-                        <v-layout column>
-                          <v-card-title class="title font-weight-bold text-center" style="word-break: normal">{{ item.title }}</v-card-title>
-                          <v-card-subtitle>{{ item.subtitle }}</v-card-subtitle>
-                          <v-btn class="pb-8" small text :href="item.link" target="_blank"><v-icon left>mdi-link</v-icon>Project Link</v-btn>
-                        </v-layout>
-                      </div>
-                   </v-expand-transition>
-                  </v-img>
-                </v-card>
-              </v-hover>
+            <v-layout wrap justify-center align-center>
+            <v-flex mt-8 v-for="item in items" :key="item.title">
+              <v-layout justify-center>
+                <v-hover v-slot:default="{ hover }">
+                  <v-card :elevation="hover ? 4 : 0" style="border-radius: 16px" max-width="300">
+                    <v-img :src="item.src" max-width="300">
+                      <v-expand-transition>
+                        <div v-if="hover"  class="d-flex transition-fast-in-fast-out black v-card--reveal display-3 white--text" style="height: 100%;">
+                          <v-layout column>
+                            <v-card-title class="title font-weight-bold text-center" style="word-break: normal">{{ item.title }}</v-card-title>
+                            <v-card-subtitle>{{ item.subtitle }}</v-card-subtitle>
+                            <v-btn class="pb-8" small text :href="item.link" target="_blank"><v-icon left>mdi-link</v-icon>Project Link</v-btn>
+                          </v-layout>
+                        </div>
+                      </v-expand-transition>
+                    </v-img>
+                  </v-card>
+                </v-hover>
+              </v-layout>
             </v-flex>
             </v-layout>
           </v-container>
