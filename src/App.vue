@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <Navbar/>
     <v-content>
+      <Navbar/>
       <router-view></router-view>
     </v-content>
   </v-app>
@@ -14,11 +14,10 @@ export default {
   name: 'App',
 
   components: {
-    Navbar
+   Navbar
   },
-
   data: () => ({
     //
-  }),
-};
+  })
+}
 </script>

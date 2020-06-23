@@ -1,15 +1,15 @@
 <template>
   <div>
     <section id="project">
-      <v-card class="elevation-0" style="border-radius: 0px" dark>
+      <v-card class="elevation-0" style="border-radius: 0px; min-height: 625px" dark>
         <v-layout column justify-center align-center>
           <v-card-title class="display-2 font-weight-bold text-center mt-8">My Works</v-card-title>
           </v-layout>
-          <v-container class="mx-2" fluid grid-list-xl>
+          <v-container fluid grid-list-xl>
             <v-layout wrap justify-space-around align-center>
             <v-flex v-for="item in items" :key="item.title">
               <v-hover v-slot:default="{ hover }">
-                <v-card :elevation="hover ? 4 : 0" max-width="300" class="mx-0">
+                <v-card :elevation="hover ? 4 : 0" max-width="300">
                   <v-img style="border-radius: 16px" :src="item.src" max-width="300">
                     <v-expand-transition>
                       <div v-if="hover"  class="d-flex transition-fast-in-fast-out black v-card--reveal display-3 white--text" style="height: 100%;">
