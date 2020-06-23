@@ -7,7 +7,7 @@
           </v-layout>
           <v-container fluid grid-list-xl>
             <v-layout wrap justify-center align-center>
-            <v-flex mt-8 v-for="item in items" :key="item.title">
+            <v-flex my-4 v-for="item in items" :key="item.title">
               <v-layout justify-center>
                 <v-hover v-slot:default="{ hover }">
                   <v-card :elevation="hover ? 4 : 0" style="border-radius: 16px" max-width="300">
@@ -41,7 +41,7 @@ export default {
         {
           title: 'Kupuku',
           subtitle: 'Kupuku is an educational AR game to study butterflies more fun.',
-          src: 'https://drive.google.com/uc?export=view&id=1LT0_DrFLr2PVXfhotbbOO8cNzpb6cCpc',
+          src: 'https://drive.google.com/uc?export=view&id=1GVo4Lrigs5lF5nhfVM8RIgWfSjnodpwZ',
           link: 'https://drive.google.com/folderview?id=1zk-00Zx4zBgTvAUBMXP3aNjPXIMJmXyS'
         },
         {

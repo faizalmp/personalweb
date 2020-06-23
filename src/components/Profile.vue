@@ -9,16 +9,15 @@
               <v-img src="../assets/profile_photo.png" max-height="300" max-width="300"></v-img>
             </v-layout>
             <v-layout class="hidden-lg-and-up" align-center justify-center>
-              <v-img src="../assets/profile_photo.png" max-height="250" max-width="250"></v-img>
+              <v-img src="../assets/profile_photo.png" max-height="200" max-width="200"></v-img>
             </v-layout>
-            <v-layout class="my-8" column align-center justify-center>
+            <v-layout class="my-4 px-8" column align-center justify-center>
               <p class="body-1 text-center">
                 <span class="font-weight-bold">I am Faizal Muhammad Priyowibowo,</span><br>
-                  Final year IT student at Universitas Gadjah Mada with experience in subject projects and research projects<br>
-                  as an android developer and front-end developer.
+                <span>Final year IT student at Universitas Gadjah Mada with experience in subject projects and research projects as an android developer and front-end developer. Computer is my friend, especially code. I love design, but my design makes me haha.</span>
               </p>
               <v-card-text class="text-center">
-                <v-btn v-for="item in contacts" :key="item.icon" class="mx-4 text-center" :href="item.link" target="_blank" icon>
+                <v-btn v-for="item in contacts" :key="item.icon" class="mx-2 text-center" :href="item.link" target="_blank" icon>
                   <v-icon size="24px">{{ item.icon }}</v-icon>
                 </v-btn>
               </v-card-text>
