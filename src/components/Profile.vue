@@ -1,8 +1,9 @@
 <template>
-  <div id="profile">
+  <div>
+    <section id="profile">
       <v-card :color="$store.state.palette.secondary" elevation="0" style="border-radius: 0px; min-height: 100vh">
         <v-layout align-center justify-center column>
-          <v-card-title class="display-2 text-center font-weight-bold mt-12">about me</v-card-title>
+          <v-card-title class="display-2 text-center font-weight-bold">about me</v-card-title>
           <v-flex align-self-center>
             <v-layout class="hidden-sm-and-down" align-center justify-center>
               <v-img src="../assets/profile_photo.png" max-height="300" max-width="300"></v-img>
@@ -17,14 +18,16 @@
                   as an android developer and front-end developer.
               </p>
               <v-card-text class="text-center">
-                <v-btn v-for="item in contacts" :key="item.icon" class="mx-4 text-center" :href="item.link" icon>
+                <v-btn v-for="item in contacts" :key="item.icon" class="mx-4 text-center" :href="item.link" target="_blank" icon>
                   <v-icon size="24px">{{ item.icon }}</v-icon>
                 </v-btn>
               </v-card-text>
+              <v-btn rounded outlined href="https://drive.google.com/file/d/1j2UbtB3MRhci4U3lHpB4LmsIDOfyGBgR/view?usp=sharing" target="_blank">See my resume</v-btn>
            </v-layout>
           </v-flex>
       </v-layout>
       </v-card>
+    </section>
   </div>
 </template>
 
