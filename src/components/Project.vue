@@ -39,12 +39,6 @@ export default {
   data: () => ({
     items: [
         {
-          title: 'Kupuku',
-          subtitle: 'Kupuku is an educational AR game to study butterflies more fun.',
-          src: 'https://drive.google.com/uc?export=view&id=1GVo4Lrigs5lF5nhfVM8RIgWfSjnodpwZ',
-          link: 'https://drive.google.com/folderview?id=1zk-00Zx4zBgTvAUBMXP3aNjPXIMJmXyS'
-        },
-        {
           title: 'Smartland',
           subtitle: 'Smartland is a platform to listing lands.',
           src: 'https://drive.google.com/uc?export=view&id=1suT1UW0vEGoOI43cTimexVJ1e6Xsl9PN',
@@ -57,16 +51,22 @@ export default {
           link: 'https://github.com/faizalmp/Piruma-Admin-Website'
         },
         {
-          title: 'Jengukin',
-          subtitle: 'Jengukin is an android app to help patient and family keep connected.',
-          src: 'https://drive.google.com/uc?export=view&id=1kFTSN-1ipzsQX89VwQkIcklAghebJ-jv',
-          link: 'https://github.com/faizalmp/Kumpulan-Proyek-Kuliah-Kelompok/tree/master'
+          title: 'N202 Innovation Labs Landing Page',
+          subtitle: 'Build frontend side of https://n202labs.id',
+          src: 'https://drive.google.com/uc?export=view&id=1IFlVg5Av6gFYs81HBtiyaNFf2U-GJic6',
+          link: 'https://n202labs.id'
         },
         {
-          title: 'TAYO',
-          subtitle: 'TAYO is an android app to track the nearest bus get bus stop informations, bus tracks, and bus schedules.',
-          src: 'https://drive.google.com/uc?export=view&id=1bhM96ZikWUsi8IhmGoOTxKdk833JQvBL',
-          link: 'https://github.com/faizalmp/Kumpulan-Proyek-Kuliah-Kelompok/tree/master'
+          title: 'Main Bareng REST API',
+          subtitle: 'REST API project developed with NodeJS using Adonis. Made for Sanbercode backend development final project',
+          src: 'https://drive.google.com/uc?export=view&id=1bCAhGGcoOofauvInvrlhhBHyjdSXX9Zi',
+          link: 'https://github.com/faizalmp/main-bareng'
+        },
+        {
+          title: 'Covid Statistic',
+          subtitle: 'An app to watch current covid-19 statistic. Made for Riliv recruitmet test. UI by Riliv tech',
+          src: 'https://drive.google.com/uc?export=view&id=1g-70kikVocLMV-j6l1OngM-3CJVfN9Oa',
+          link: 'https://github.com/faizalmp/CovidStatistic'
         }
     ]
   })

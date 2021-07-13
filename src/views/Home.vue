@@ -3,6 +3,7 @@
     <Header/>
     <Profile/>
     <Project/>
+    <Involved/>
     <Footer/>
   </div>
 </template>
@@ -11,6 +12,7 @@
 import Header from '../components/Header'
 import Profile from '../components/Profile'
 import Project from '../components/Project'
+import Involved from '../components/InvolvedProject'
 import Footer from '../components/Footer'
 
 export default {
@@ -19,6 +21,7 @@ export default {
     Header,
     Profile,
     Project,
+    Involved,
     Footer
   },
   data: () => ({
