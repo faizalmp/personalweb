@@ -14,7 +14,7 @@
             <v-layout class="my-4 px-8" column align-center justify-center>
               <p class="body-1 text-center">
                 <span class="font-weight-bold">I am Faizal Muhammad Priyowibowo,</span><br>
-                <span>I am a person who interest in mobile development and front-end development especially with Java, Kotlin, and VueJS. I am always willing to learn and improve his works. Computer is my friend, especially code. I love design, but my design makes me haha.</span>
+                <span>I am a person who interest in mobile development and front-end development especially with Java, Kotlin, and VueJS. I am always willing to learn and improve my works. Computer is my friend, especially code. I love design, but my design makes me haha.</span>
               </p>
               <v-card-text class="text-center">
                 <v-btn v-for="item in contacts" :key="item.icon" class="mx-2 text-center" :href="item.link" target="_blank" icon>
